@@ -14,6 +14,7 @@ import config from './config/config.md'
 import services from './services/services.md'
 import common from './components/common/common.md'
 import login from './components/login/login.md'
+// import moment from '../../node_modules/moment/moment.js'
 import blog from './components/blog/blog.md'
 
 console.log("In app.js")
@@ -27,5 +28,6 @@ angular.module('app', [
     services,
     common,
     login,
+    // moment,
     blog
 ])
