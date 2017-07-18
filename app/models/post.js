@@ -14,7 +14,8 @@ module.exports = mongoose.model('Post', new mongoose.Schema({
     },
     date: {
         type: Date
-    }
+    },
+    hidden: Boolean,
 }, {
     timestamps: true
 }))
