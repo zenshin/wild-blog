@@ -4,8 +4,10 @@ let navbar = {
         'use strict'
          // momentJS clock
     //    this.date = moment().format('MM/DD/YYYY');
+    
         angular.extend(this, {
             $onInit() {
+                //  date = new moment();
                 // date = moment().format('MM/DD/YYYY');
                 // $scope.date = new moment();
                 UsersService.getCurrent().then((user) => {
