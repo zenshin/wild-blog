@@ -8,6 +8,7 @@ let favicon         = require('serve-favicon')
 let methodOverride  = require('method-override')
 let logger          = require('morgan')
 let passport        = require('passport')
+let moment          = require('moment')
 
 // Will automatically load index.js in routes folder
 let routes          = require('./app/routes')
@@ -15,6 +16,10 @@ let routes          = require('./app/routes')
 let app             = express()
 
 const ENV = require('./config/env')[process.env.NODE_ENV || 'development']
+
+// app.use("moment", moment);
+
+app.use("moment", moment);
 
 require('./config/passport')(passport) // pass passport for configuration
 
