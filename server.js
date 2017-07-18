@@ -8,6 +8,7 @@ let favicon         = require('serve-favicon')
 let methodOverride  = require('method-override')
 let logger          = require('morgan')
 let passport        = require('passport')
+let moment          = require('moment')
 
 // Will automatically load index.js in routes folder
 let routes          = require('./app/routes')
